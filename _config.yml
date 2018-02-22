@@ -22,9 +22,6 @@ url: "https://blog.iqbalfasri.net" # the base hostname & protocol for your site,
 twitter_username: iqbalfasrii
 github_username:  iqbalfasri
 
-# Beauty Url
-permalink: /:categories/:year/:month/:day/:title:output_ext
-
 # Build settings
 markdown: kramdown
 theme: minima
