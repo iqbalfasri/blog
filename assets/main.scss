@@ -6,78 +6,79 @@ body {
 }
 
 a:hover {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
-$color-red: red;
-
 .container {
-    max-width: 860px;
+    max-width: 720px;
     position: relative;
     background-color: white;
     overflow: auto;
 }
 
 .header-wrapper {
-    background-color: white;
-
+    height: 100px;
+    margin: 0 0 20px 0;
     .header-content {
-        background-color: white;
         h1 {
             font-size: 28pt;
             font-weight: 500;
-            color: #444444;
+            color: #222222;
+            text-align: center;
+        }
+        p {
+            margin-top: -20px;
+            text-align: center;
+            font-size: 14px;
+            color: #555555;
         }
     }
 
 }
 
-.page-content {
-    .wrapper {
-        // background-color: #293a5e;
-    }
-}
-
 .post-list {
-    z-index: 999;
-    li {
+    a.list-link {
         position: relative;
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
         justify-content: space-between;
-        transition: 0.3s all ease-in-out;
-        margin: 30px auto;
+        text-decoration: none;
+        transition: 0.25s all ease-in-out;
+        width: 100%;
         z-index: 1333;
+        padding: 5px 5px;
+        overflow: hidden;
+        border-radius: 4px;
+        margin: 5px 0;
         &::before {
             content: " ";
             position: absolute;
-            left: 0; bottom: 0;
-            height: 15px;
-            width: 0;
-            background-color: #f3c72a;
-            transition: .3s all ease-out;
-            transition-delay: 0.3s;
+            left: 0; bottom: 0; top: 0;
+            width: 0%;
+            background-color: #f4f4fc;
+            transition: .25s all ease-in-out;
             z-index: -1;
         }
         &:hover::before {
-            width: 150px;
+            width: 100%;
         }
         &:hover {
-            padding-left: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        h3 {
+            color: #5874f8;
+            font-size: 16pt;
+            font-weight: 400;
+            text-decoration: none !important;
         }
     }
 }
 
-.post-link {
-    color: #136def;
-    font-size: 18pt;
-    font-weight: 500;
-    text-decoration: none !important;
-    width: 860px;
-    // background-color: red;
+.post-meta {
+    color: #5874f8;
 }
-
 
 .footer {
     position: relative;
