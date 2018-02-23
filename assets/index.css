@@ -3,10 +3,10 @@ body {
   font-family: 'Roboto Mono', monospace !important; }
 
 a:hover {
-  text-decoration: none; }
+  text-decoration: none !important; }
 
 .container {
-  max-width: 860px;
+  max-width: 720px;
   position: relative;
   background-color: white;
   overflow: auto; }
@@ -25,26 +25,43 @@ a:hover {
     font-size: 14px;
     color: #555555; }
 
-.post-list li, .post-list a {
+.post-list a.list-link {
   position: relative;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
   text-decoration: none;
-  transition-property: padding-left;
-  transition-duration: .25s;
-  width: 100%; }
-  .post-list li:hover, .post-list a:hover {
-    padding-left: 10px; }
+  transition: 0.25s all ease-in-out;
+  width: 100%;
+  z-index: 1333;
+  padding: 5px 5px;
+  overflow: hidden;
+  border-radius: 4px;
+  margin: 5px 0; }
+  .post-list a.list-link::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    width: 0%;
+    background-color: #f4f4fc;
+    transition: .25s all ease-in-out;
+    z-index: -1; }
+  .post-list a.list-link:hover::before {
+    width: 100%; }
+  .post-list a.list-link:hover {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .post-list a.list-link h3 {
+    color: #5874f8;
+    font-size: 16pt;
+    font-weight: 400;
+    text-decoration: none !important; }
 
-.post-link {
-  display: flex;
-  flex: 1;
-  color: #136def;
-  font-size: 14pt;
-  font-weight: 500;
-  text-decoration: none !important; }
+.post-meta {
+  color: #5874f8; }
 
 .footer {
   position: relative;
