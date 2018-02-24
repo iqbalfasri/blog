@@ -61,7 +61,20 @@ a:hover {
     text-decoration: none !important; }
 
 .post-meta {
-  color: #5874f8; }
+  color: #555555;
+  font-weight: 300; }
+
+.post-title {
+  font-size: 18pt;
+  font-weight: 500; }
+
+.post-meta-posts {
+  font-size: 10pt;
+  margin: -15px auto 20px; }
+
+.post-content {
+  line-height: 1.5;
+  font-size: 12pt; }
 
 .footer {
   position: relative;
