@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Tulisan pertama"
+comments: true
+title: "Tulisan pertama"
 ---
 
 Hallo, saya Iqbal Fasri atau biasa dipanggil iqbal pake "Q". 
