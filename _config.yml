@@ -26,6 +26,10 @@ github_username:  iqbalfasri
 # permalink: pretty
 permalink: :title/
 
+# Disqus Comments
+disqus:
+    shortname: blogiqbalfasri
+
 # Build settings
 markdown: kramdown
 theme: minima
