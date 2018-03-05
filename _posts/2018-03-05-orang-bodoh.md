@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title:  "Orang Bodoh"
+title: "Orang Bodoh"
 ---
 Orang bodoh berpikir pendek untuk memutuskan sesuatu yang dipikirkan panjang-panjang oleh orang pintar. Walhasil orang orang pintar menjadi staf-nya orang bodoh. Saat bisnis orang bodoh mengalami kelesuan, dia PHK orang-orang pintar yang berkerja. Tapi orang-orang pintar DEMO.
 
