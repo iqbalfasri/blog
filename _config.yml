@@ -24,7 +24,7 @@ github_username:  iqbalfasri
 
 # Permalink
 # permalink: pretty
-permalink: :title:output_ext
+permalink: :title
 
 # Build settings
 markdown: kramdown
