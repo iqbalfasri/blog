@@ -1,7 +1,12 @@
 // Font Custom
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+
+$url-image : url('https://images.unsplash.com/photo-1447927228194-acfa3d1b45c4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1cfd041f380c030515cf0b347a52ff3f&auto=format&fit=crop&w=1350&q=80');
 
 body {
+    margin: 0; padding: 0;
     font-family: 'Roboto Mono', monospace !important;
 }
 
@@ -14,26 +19,58 @@ a:hover {
     position: relative;
     background-color: white;
     overflow: auto;
+    z-index: 1333;
 }
 
 .header-wrapper {
-    height: 100px;
-    margin: 0 0 20px 0;
+    height: 400px;
+    background-color: #f4f4fc;
+    margin-top: -30px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: $url-image;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+    position: relative;
+    z-index: 1333;
+    &::before {
+        z-index: -5;
+        content: "";
+        position: absolute;
+        left: 0; right: 0; bottom: 0; top: 0;
+        background-color: rgba(0,0,0, 0.3);
+    }
+
     .header-content {
+        position: fixed;
+        z-index: -2;
         h1 {
-            font-size: 28pt;
+            font-family: 'Kaushan Script', cursive;
+            font-size: 52pt;
             font-weight: 500;
-            color: #222222;
+            color: #ffff;
             text-align: center;
         }
         p {
-            margin-top: -20px;
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+            letter-spacing: 5px;
+            margin-top: -45px;
             text-align: center;
-            font-size: 14px;
-            color: #555555;
+            font-size: 16px;
+            color: #fcfcfc;
         }
     }
 
+}
+
+.page-content {
+    margin: 20px auto;
 }
 
 .post-list {
@@ -105,8 +142,11 @@ a:hover {
     }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 480px) {
     .header-wrapper .header-content h1 {
-        font-size: 22pt;
+        font-size: 34pt;
+    }
+    .header-wrapper .header-content p {
+        margin-top: -35px;
     }
 }
