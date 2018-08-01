@@ -24,7 +24,7 @@ github_username:  iqbalfasri
 
 # Permalink
 # permalink: pretty
-permalink: :title/
+permalink: /blog/:title/
 
 # Disqus Comments
 disqus:
