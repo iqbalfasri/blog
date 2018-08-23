@@ -169,6 +169,19 @@ a:hover {
   /* background-color: #4586ff; */
 }
 
-.u-url {
-  
+.btn-404 {
+  display: block;
+  margin: 20px auto !important;
+  width: 200px;
+  padding: 10px;
+  color: white;
+  border-radius: 2px;
+  background-color: #4586ff;
+  transition: 0.2s all ease-in-out;
+}
+
+.btn-404:hover {
+  cursor: pointer;
+  color: white;
+  box-shadow: 0 10px 50px rgba(69, 134, 255, 0.35);
 }
