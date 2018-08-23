@@ -1,12 +1,17 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500");
+/* @import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500");
 @import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
-@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500"); */
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+@import url("https://use.fontawesome.com/releases/v5.2.0/css/all.css");
+
+@import url("./fonts.css");
+
 body {
   margin: 0;
   padding: 0;
-  font-family: "Rubik", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Bale Font", sans-serif !important;
 }
 
 a:hover {
@@ -22,7 +27,7 @@ a:hover {
 
 .header-wrapper {
   height: 250px;
-  background-color: #fff;
+  /* background-color: #f9ce00; */
   margin-top: -30px !important;
   display: flex;
   flex-direction: column;
@@ -83,9 +88,6 @@ a:hover {
   overflow: hidden;
   margin: 10px 0;
 }
-.post-list a.list-link:hover h3 {
-  text-decoration: underline !important;
-}
 .post-list a.list-link h3 {
   color: #2f3640;
   font-size: 16pt;
@@ -93,6 +95,13 @@ a:hover {
   text-align: center;
   text-decoration: none !important;
 }
+.post-list a.list-link:hover h3 {
+  /* text-decoration: underline !important; */
+}
+.list-link:hover {
+  transform: translateY(-5px);
+}
+
 .post-list a.list-link .post-excerpt {
   margin: 10px 0 0;
 }
@@ -104,7 +113,7 @@ a:hover {
 }
 
 .post-meta {
-  color: #555555;
+  color: #4586ff;
   font-weight: 300;
 }
 
@@ -122,6 +131,9 @@ a:hover {
   line-height: 1.5;
   font-size: 12pt;
   margin-bottom: 20px;
+}
+.post-content p {
+  font-weight: 400;
 }
 
 .footer {
@@ -148,4 +160,15 @@ a:hover {
   .post-list a.list-link {
     margin: 20px 0;
   }
+}
+
+
+.hightlight-blue {
+  /* color: white; */
+  border-bottom: 5px solid #4586ff;
+  /* background-color: #4586ff; */
+}
+
+.u-url {
+  
 }
