@@ -23,8 +23,8 @@ twitter_username: iqbalfasrii
 github_username:  iqbalfasri
 
 # Permalink
-permalink: pretty
-# permalink: :title/
+# permalink: pretty
+permalink: :title/
 
 # Disqus Comments
 disqus:
