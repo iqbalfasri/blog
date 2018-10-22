@@ -13,9 +13,9 @@ layout: default
       {% for post in site.posts %}
       <div class="col-md-6">
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <a class="list-link" href="{{ post.url | relative_url }}">
+        <a class="list-link" href="javascript:void(0)" onclick="window.location.href='{{ post.url | relative_url }}'">
             <div class="post-excerpt">
-              {{post.content | strip_html | truncatewords: 7}}
+              {{post.content | strip_html | truncatewords: 5}}
             </div>
             <span class="post-meta">{{ post.date | date: date_format }}</span>
             <h3>

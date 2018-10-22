@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Bale Font";
+  src: url("../fonts/GoogleSans-Regular.woff") format('woff');
+}
+
+@font-face {
+  font-family: "Bale Font";
+  src: url("../fonts/GoogleSans-Bold (1).woff") format('woff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Bale Font";
+  src: url("../fonts//GoogleSans-Medium.woff") format('woff');
+  font-weight: 500;
+}
