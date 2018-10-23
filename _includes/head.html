@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="{{ "/assets/css/index.css " | relative_url }}">
     <link rel="stylesheet" href="{{ "/assets/css/bootstrap.min.css " | relative_url }}">
     <link rel="stylesheet" href="{{ "/assets/css/bootstrap-theme.min.css " | relative_url }}">
+    <!-- Twitter Meta Tag -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@baaalfs">
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{{ page.description }}">
+    <meta property="og:url" content="{{ page.url }}" />
+    {% if page.description %}
+      <meta name="twitter:description" content="{{ page.description }}">
+    {% endif %}
+    <!-- Twitter Meta Tag -->
     {% feed_meta %}
     {% include google-analytics.html %}
     <!--  Load jQuery  -->
