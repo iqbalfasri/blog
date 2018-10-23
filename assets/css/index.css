@@ -12,6 +12,7 @@ body {
   padding: 0;
   -webkit-font-smoothing: antialiased;
   font-family: "Bale Font", sans-serif !important;
+  background-color: #2f36400a !important;
 }
 
 a:hover {
@@ -21,7 +22,7 @@ a:hover {
 .container {
   max-width: 720px;
   position: relative;
-  background-color: white;
+  background-color: transparent;
   z-index: 1333;
 }
 
@@ -100,11 +101,13 @@ a:hover {
   /* text-decoration: underline !important; */
 }
 .list-link:hover {
-  transform: scale(.95);
-  background-color: #4586ff1c !important;
+  transform: scale(1.05);
+  transform: translateY(-2px);
+  /* background-color: #2f3640 !important; */
+  box-shadow: 0 15px 20px #2f36400a;
 }
 .list-link:focus {
-  transform: scale(.9)
+  transform: scale(.95)
 }
 
 .post-list a.list-link .post-excerpt {
