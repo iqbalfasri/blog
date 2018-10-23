@@ -13,7 +13,7 @@
     <meta name="twitter:title" content="{{ page.title }}">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
     {% if page.description %}
-    <meta name="twitter:description" content="{{ page.content | markdownify | strip_html | truncatewords: 1 }}">
+    <meta name="twitter:description" content="{{ page.content | markdownify | strip_html | truncatewords: 3 }}">
     {% endif %}
     <!-- Twitter Meta Tag -->
     {% feed_meta %}
