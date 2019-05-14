@@ -6,3 +6,5 @@ fields:
 - type: boolean
   name: ''
   default: true
+pages:
+- _posts/test.md
