@@ -3,6 +3,17 @@ label: blog-frontmatter
 hide_body: false
 fields:
 - type: text
+  name: layout
+  label: LAYOUT
+  description: layout post
 - type: boolean
-  name: ''
+  name: comments
   default: true
+  label: COMMENTS
+  description: enable or disable comment
+- name: title
+  type: text
+  config:
+    required: false
+  label: TITLE
+  description: Title Post
