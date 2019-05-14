@@ -17,5 +17,3 @@ fields:
     required: false
   label: TITLE
   description: Title Post
-pages:
-- _posts/bangsat.md
